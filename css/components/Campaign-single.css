@@ -1,0 +1,55 @@
+.Campaign-single{
+    background-image: url(../../img/single-campaign.png);
+    padding: 8.75rem .9375rem;
+    margin: 1.875rem 0;
+    background-attachment: fixed;
+    /*? attachment sayesinde arka plan görselini sabitleriz */
+}
+.Campaign-single .campaign-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.Campaign-single .campaign-info h2{
+    font-size: 1.5625rem;
+}
+.Campaign-single .campaign-info strong{
+    font-size: 3.3125rem;
+    font-weight: 600;
+    margin: 1.25rem 0;
+}
+.Campaign-single .campaign-info span{
+    display: inline-block;
+    width: 3.125rem;
+    height: .3125rem;
+    background-color: white;
+}
+.Campaign-single .campaign-info  button{
+    background-color: #fff;
+    margin-top: 3.75rem;
+    transition: background-color 0.7s ease ;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.Campaign-single .campaign-info  button:hover{
+    background-color: #1367ef;
+    color: white;
+    border: 1px solid #1367ef;
+}
+.Campaign-single .campaign-info button:hover a {
+    color: white;
+}
+
+/*! responsive Start  */
+
+@media (max-width:768px){
+    .Campaign-single{
+        background-position:center;
+        background-clip:border-box;
+        object-position: 60%;
+    }
+}
+
+/*! responsive End  */

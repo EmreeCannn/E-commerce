@@ -1,0 +1,20 @@
+.breadcrumb .breadcrumb-list{
+    display: flex;
+    column-gap: .3125rem;
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item{
+    font-size: .70rem;
+    transition: all 0.7s ease;
+    opacity: 0.7;
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item:nth-child(4){
+    opacity: 1;
+} 
+.breadcrumb .breadcrumb-list .breadcrumb-item:not(:nth-child(4)):after{
+    content: "/";
+    color: #dee0ea;
+    margin-left: .1875rem;
+}
+.breadcrumb .breadcrumb-list .breadcrumb-item:not(:nth-child(4)) a:hover{
+    text-decoration: underline;
+}

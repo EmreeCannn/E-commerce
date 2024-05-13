@@ -1,0 +1,44 @@
+.Policy-Section{
+    border-top: 1px solid #DEE0EA ;
+    margin-top:1.875rem;
+}
+
+.Policy-Section .Policy-list{
+    display: flex;
+    justify-content: space-between;
+    padding:28px;
+}
+.Policy-Section .Policy-list .Policy-item{
+    display: flex;
+}
+.Policy-Section .Policy-list .Policy-item  i{
+    font-size: 3.4375rem;
+}
+.Policy-Section .Policy-list .Policy-item .Policy-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: .25rem;
+    justify-content: center;
+    margin-left:10px;
+}
+.Policy-Section .Policy-list .Policy-item .Policy-info span{
+    font-size: .625rem;
+}
+
+/*? responsive Start  */
+@media (max-width:768px){
+    /* .Policy-Section .container{
+        max-width: 106.25rem;
+    } */
+    .Policy-Section .Policy-list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;        
+    }
+    .Policy-Section .Policy-list .Policy-item  i{
+        font-size:45px;
+    }
+}
+
+/*? Responsive End  */

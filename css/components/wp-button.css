@@ -1,0 +1,107 @@
+.wp-button-wrapper{
+    position: fixed;
+    bottom: 3.125rem;
+    right: 3.125rem;
+    z-index: 100;
+}
+.wp-button-wrapper .wp-button{
+    opacity: 0;
+    visibility: hidden;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 2s ease;
+    
+    
+}
+
+.wp-button-wrapper .wp-button i{
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.wp-button-wrapper .wp-button i:hover{
+    transform: scale(1.2);
+}
+
+.added-to-cart{
+    position: fixed;
+    top: 11.375rem;
+    right: 6.125rem;
+    z-index: 100;
+    transition: opacity 1s ease;
+    opacity:0;
+    visibility: hidden; 
+}
+.added-to-cart .added-product-wrapper{
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    column-gap: 3.125rem;
+    width: 22.4375rem;
+    height: 6.75rem;
+    border-radius: 1.25rem 0 0 1.25rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #022C57;
+    z-index: 200;
+    transition: opacity 1s ease;
+
+}
+.added-to-cart.active{
+    visibility: visible;
+    opacity: 1;
+
+}
+.added-to-cart .added-product-wrapper .approve-icon{
+    background-color: #022C57;
+    height: 100%;
+    min-width: 4.125rem;
+    border-radius: 1.25rem 0 0 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.added-to-cart .added-product-wrapper .approve-icon i{
+    font-size: 2.5625rem;
+    font-weight: bold;
+    color: white;
+}
+.approve p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.approve a{
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #022C57;
+    text-decoration: underline;
+}
+
+@media (max-width:932px){
+    .added-to-cart{
+        right: 2rem;
+    }
+    .added-to-cart .added-product-wrapper{
+        width: 17.4375rem;
+        height: 3.75rem;
+    }
+    .approve p{
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .approve a{
+        display: inline-block;
+        font-size: .6875rem;
+        margin-top: .25rem;
+        color: #022C57;
+        text-decoration: underline;
+    }
+    
+}

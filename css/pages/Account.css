@@ -1,0 +1,102 @@
+.account .account-wrapper{
+    margin: 3.125rem 0 ;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+}
+.account .account-wrapper .account-login-section{
+    flex: 1;
+}
+.account .account-wrapper .account-register-section{
+    flex: 1;
+}
+.account-form .account-input-fields .input-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.875rem;
+    margin-top: 1.25rem;
+}
+.account .account-wrapper .account-login-section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.account .account-wrapper .account-register-section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.account-form .account-input-fields .input-field label{
+    font-size: .7438rem;
+    margin-bottom: .2813rem;
+}
+.account-form .account-input-fields .input-field label>span{
+    color: red;
+    font-size: .875rem;
+}
+.account .account-wrapper .account-login-section .account-form .account-remember-me-section{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: .25rem;
+    margin-bottom: 1.25rem;
+}
+.account .account-wrapper .account-login-section .account-form .account-remember-me-section label{
+    font-size: 10px;
+}
+.account-login-btn .account-button{
+    background-color: red;
+    color: white;
+    padding: 8px  22px;
+    font-weight: 500;
+    font-size: 11px;
+    transition: all 0.7s ease;
+    margin-bottom: .625rem;
+}
+.account-login-btn .account-button:hover{
+    background-color: black;
+    color: red;
+}
+.account .account-wrapper .account-login-section .account-form .lost-your-password-section .account-password-info .account-password-nav{
+    color: red;
+    font-size: .6875rem;
+    display: inline-block;
+    margin-top: .625rem;
+}
+.account .account-wrapper .account-register-section .account-cookie .account-cookie-info{
+    font-size: 9.3px;
+    line-height: 1.5;
+    margin-bottom: .625rem;
+}
+.account-register-btn .account-button{
+    background-color: red;
+    color: white;
+    padding: 8px  22px;
+    font-weight: 500;
+    font-size: 11px;
+    transition: all 0.7s ease;
+    margin-bottom: .625rem;
+}
+.account-register-btn .account-button:hover{
+    background-color: black;
+    color: red;
+}
+
+/*! Responsive Start  */
+@media (max-width:768px){
+  .account .account-wrapper{
+    flex-direction: column;
+  }
+  .account .account-wrapper .account-register-section{
+    position: relative;
+  } 
+  .account .account-wrapper .account-register-section::before{
+    width: 100dvw;
+    content: "";
+    height: 0.3px;
+    background-color: black;
+    position: absolute;
+    top: -25px;
+    left: -20px;
+  }
+}
+
+/*! Responsive End  */

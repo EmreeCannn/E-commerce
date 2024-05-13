@@ -1,0 +1,63 @@
+.Blogs{
+    margin: 1.875rem 0;
+}
+
+.Blogs .blog-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.875rem;
+    text-align: center;
+}
+
+.Blogs .blog-list .blog-item .blog-nav-image{
+    display: flex;
+    overflow: hidden;
+}
+.Blogs .blog-list .blog-item .blog-nav-image img{
+    width: 100%;
+    transition: all 0.7s ease;
+}
+.Blogs .blog-list .blog-item .blog-info{
+    padding: 1.875rem .625rem 1.5625rem .625rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.Blogs .blog-list .blog-item .blog-info .blog-info-top{
+    font-size: .875rem;
+    color: #b2b3b8;
+    margin-bottom: .875rem;
+}
+.Blogs .blog-list .blog-item .blog-info .blog-info-center a{
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    transition: color 0.7s ease;
+}
+.Blogs .blog-list .blog-item .blog-info .blog-info-bottom a{
+    font-size: .8125rem;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    padding-bottom: .1875rem;
+    transition: all 0.7s ease;
+}
+
+
+.Blogs .blog-list .blog-item .blog-info .blog-info-center a:hover{
+    color: #1367ef;
+}
+.Blogs .blog-list .blog-item .blog-info .blog-info-bottom a:hover{
+    border-bottom: 1px solid #1367ef;
+    color: #1367ef;
+
+}
+.Blogs .blog-list .blog-item:hover .blog-nav-image img{
+    transform: scale(1.2);
+}
+/*! responsive start  */
+@media (max-width:768px){
+    .Blogs .blog-list{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*! responsive end  */

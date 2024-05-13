@@ -1,0 +1,153 @@
+/*! base css start  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+body{
+  overflow-x: hidden;
+}
+.container {
+   max-width: 1200px;
+   width: 100%;
+  /* senin max within 1200px olsun ve bu 1200px lik alan içinde 100%  lük bir yer kapla */
+  margin: 0 auto;
+}
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  p{
+    font-size: 12px ;
+    color: black ;
+  }
+  button {
+    cursor: pointer;
+    border: 1px dashed #1367ef;
+    border: none;
+    transition: all 0.5s ease;
+  }
+  button:disabled{
+    opacity: 0.4 !important;
+    cursor: no-drop;
+  }
+  button:disabled:hover{
+    background-color: blue;
+    color: white;
+  }
+  textarea{
+    resize: none;
+    outline: none;
+    border: 1px solid #dee0ea;
+    overflow: auto;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0 1.5625rem;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+    color: white;
+
+  }
+  .btn-primary {
+    background-color: #1367ef;
+    color: #fff;
+    border: #1367ef;
+   
+  }
+  .btn-sm {
+    line-height: 2.20rem;
+    background-color: #1367ef;
+    color: #fff;
+    border: #1367ef;
+  }
+  .btn-lg {
+    line-height: 2.815rem;
+    background-color: #1367ef;
+    color: #fff;
+    border: #1367ef;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    color: #1367ef;
+    background-color: white;
+  }
+  .btn-lg:hover{
+    color:#1367ef;
+    background-color: white;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"] {
+    outline: none;
+    border: 1px solid #dee0ea;
+    padding: 0.5rem 0.5rem 0.5rem 0.925rem;
+  }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    border-color: grey;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1;
+  }
+
+  .img-fluid{
+    width: 100%;
+  }
+  
+  /*! base css end  */
+  
+  /*! base responsive start  */
+  @media (max-width:1200px) {
+    /* ekran genişliği 75 rem in altına geldiğinde bu kısım çalışıcak */
+    .container{
+      max-width: 62rem;
+    }
+  }
+  
+  @media (max-width:992px) {
+    .container{
+      max-width: 48rem;
+    }
+  }
+  @media (max-width:768px) {
+    .container{
+      max-width:36rem;
+    }
+  }
+  @media (max-width:576px) {
+    .container{
+      max-width:25rem;
+    }
+  }
+  @media (max-width:420px) {
+    .container{
+      max-width:350px;
+    }
+  }
+  /*! base responsive end  */

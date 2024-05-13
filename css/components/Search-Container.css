@@ -1,0 +1,156 @@
+/*! Search Container Start  */
+.search-container {
+    position: absolute;
+    top: 1.3rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+  }
+  .search-container::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    position: fixed;
+  }
+  
+  .search-container .search-wrapper {
+    max-width: 50rem;
+    width: 100%;
+    /* 50 rem içindeki 100 de 100 alanın hepsini kapla diyorum  */
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    /* fixeed kullanmamın sebebi ben aşşagıya kaydırdıkça sayfanın benimle gelmesini istememden dolayı  */
+    padding: 1.875rem;
+  }
+  
+  .search-wrapper .search-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+  .search-wrapper .search-description {
+    font-size: 0.875rem;
+    color: #7a7a7a;
+    padding-bottom: 0.9375rem;
+    border-bottom: 1px solid #dee0ea;
+  }
+  .search-wrapper .search-form {
+    margin: 0.9375rem 0;
+    display: flex;
+    position: relative;
+  }
+  .search-wrapper .search-form::after{
+    content:"";
+    width: 100%;
+    height: .06rem;
+    background-color: #dee0ea;
+    position: absolute;
+    bottom: -0.9375rem;
+  }
+  
+  .search-wrapper .search-form input {
+    width: 100%;
+    max-height: 2.625rem;
+    border-color: #dee0ea !important;
+  }
+  .search-wrapper .search-form button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0.875rem;
+    display: grid;
+    place-content: center;
+    border: 1px solid #dee0ea;
+  }
+  .search-wrapper .search-form button i{
+    font-size: 1.125rem;
+    color: #7a7a7a;
+    position: absolute;
+    top: .4375rem;
+    right: .3125rem;
+  
+  }
+  
+  .search-wrapper .search-results{
+    margin-top: 1.875rem;
+  }
+  .search-wrapper .search-results .search-heading{
+    padding: .9375rem;
+    background-color: #f9f9f9;
+    border: 1px solid #dee0ea;
+  
+  }
+  .search-wrapper .search-results .search-heading h3{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .search-wrapper .search-items{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    border-left: 1px solid #dee0ea;
+  }
+  .search-wrapper .search-results .search-items  .result-item{
+    display: flex;
+    align-items: center;
+    column-gap: .9375rem;
+    padding: .9375rem;
+    border-right:1px solid  #dee0ea ;
+    border-bottom:1px solid  #dee0ea ;
+    transition:background-color 0.5s ease ;
+  }
+  .search-wrapper .search-results .search-items  .result-item:hover{
+    background-color:#f9f9f9;
+  }
+  .search-container .search-wrapper .search-results .search-items .search-image {
+    max-width: 4.25rem;
+    width: 100%;
+  }
+  .search-container .search-wrapper .search-results .search-items .search-info{
+    font-size: .875rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .search-container .search-wrapper .search-results .search-items .search-info .search-sku{
+    color: #7a7a7a;
+    margin: .1875rem 0;
+  }
+  .search-container .search-wrapper .search-results .search-items .search-info .search-price{
+    color:red;
+    font-weight: 600;
+  }
+  .search-container i{
+    position: absolute;
+    top: .875rem;
+    right: .875rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+  }
+  /*! Search Container End */
+
+  /*! Search Responsive Start*/
+@media (max-width:995px){
+    .search-container .search-items{
+      grid-template-columns: 1fr;
+     
+    }
+     .search-container .search-wrapper{
+      max-width: 23.125rem;
+      max-height: 30.5rem;
+      overflow:auto;
+    
+    } 
+  }
+  
+  /*! Search Responsive End*/

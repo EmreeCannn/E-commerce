@@ -1,0 +1,105 @@
+.contact-bottom{
+    margin: 1.875rem 0;
+}
+.contact-bottom .contact-titles{
+    width: 75%;
+}
+.contact-bottom .contact-titles h4{
+    color: #e51414;
+    font-weight: 500;
+}
+.contact-bottom .contact-titles h2{
+    font-weight: 600;
+    font-size: 2.0625rem;
+    margin: .9375rem 0;
+}
+.contact-bottom .contact-titles p{
+    font-size: 13px;
+    line-height: 1.7;
+    color: black;
+}
+
+.contact-bottom .contact-elements{
+    display: flex;
+    margin-top: 3.125rem;
+    justify-content: space-between;
+    column-gap: 6.25rem;
+    align-items: baseline;
+}
+.contact-bottom .contact-elements .contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.375rem;
+}
+.contact-bottom .contact-elements .contact-form .contact-input_wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.contact-bottom .contact-elements .contact-form .contact-input_wrapper:nth-child(3){
+    flex-basis: 100%;
+    /* 3.divimin genişliği 100% olsun dedim */
+}
+.contact-bottom .contact-elements .contact-form .contact-input_wrapper:nth-child(4){
+    flex-basis: 100%;
+    /* 4.divimin genişliği 100% olsun dedim */
+}
+.contact-bottom .contact-elements .contact-form .contact-input_wrapper .contact-label{
+    font-size: .75rem;
+    margin-bottom: .5rem;
+
+}
+.contact-bottom .contact-elements .contact-form .contact-input_wrapper .contact-label .contact-start{
+    color: red;
+    margin-left: .1875rem;
+}
+.contact-bottom .contact-elements .contact-form .contact-form-button{
+    background-color: black;
+    color: white;
+}
+
+.contact-bottom .contact-elements .contact-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.875rem;
+    
+}
+.contact-bottom .contact-elements .contact-info .contact-info-item .contact-info-texts{
+    display: flex;
+    flex-direction: column;   
+}
+.contact-bottom .contact-elements .contact-info .contact-info-item .contact-street{
+   margin: 15px 0;
+   font-size: .6875rem;
+   line-height: 1.6;
+}
+.contact-bottom .contact-elements .contact-info .contact-info-item .contact-info-texts strong{
+    font-size: .8125rem;
+}
+.contact-bottom .contact-elements .contact-info .contact-info-item .contact-info-texts a{
+    font-size: .6875rem;
+    margin: .25rem 0;
+}
+.contact-bottom .contact-elements .contact-info .contact-info-item .contact-date{
+    margin-top: .4375rem;
+    line-height: 1.6;
+}
+
+/*! responsive start */
+@media (max-width:800px){
+    .contact-elements{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .contact-bottom .contact-titles{
+        width: 100dvw;
+        
+    }
+    .contact-bottom .contact-titles p{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right:30px;
+    }
+}
+
+/*! responsive end  */

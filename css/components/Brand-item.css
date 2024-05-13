@@ -1,0 +1,55 @@
+.brand-slider{
+    overflow: hidden;
+    margin: 1.875rem auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    display: flex;
+    position: relative;
+}
+.brand-slider::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18.75rem;
+    height: 100%;
+    background: linear-gradient(to left,rgba(255,255,255,0), white);
+    z-index: 2;
+}
+.brand-slider::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18.75rem;
+    height: 100%;
+    background: linear-gradient(to right,rgba(255,255,255,0), white);
+    z-index: 2;
+}
+
+.brands{
+    display: flex;
+    margin: 2.5rem 0;
+    padding: 0;
+    animation: 15s slide infinite linear;
+}
+.brands img{
+    height: 5.625rem;
+    cursor: pointer;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translate(calc(-100% - 1.3px));
+    }
+}
+
+@media (max-width:768px){
+    .brand-slider::before{
+        display: none;
+    }
+    .brand-slider::after{
+        display: none;
+    }
+}

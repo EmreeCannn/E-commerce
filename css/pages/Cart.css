@@ -1,0 +1,201 @@
+.Cart-section{
+    margin: 1.875rem 0;
+}
+.Cart-section .Cart-wrapper{
+    display: flex;
+    justify-content: space-between;
+} 
+/*? Cart form start  */
+
+
+.Cart-section .Cart-wrapper .cart-form{
+    flex-basis: 60%;
+}
+
+.Cart-section .Cart-wrapper .cart-form .card-table-wrapper table{
+    min-width: 43.75rem;
+}
+/*! progres bar start  */
+.Cart-section .Cart-wrapper .cart-form .progress-bar-section .progress-bar-title{
+    font-size: .69rem;
+}
+.Cart-section .Cart-wrapper .cart-form .progress-bar-section .progress-bar-title strong{
+    color: #EE403D;
+}
+.Cart-section .progress-bar-section{
+    border:1px solid #dee0ea;
+    padding: 1.25rem;
+}
+.Cart-section  .Cart-wrapper .cart-form .progress-bar-section .progress-bar{
+    background-color:#F2F3F5;
+    width: 100%;
+    height: .375rem;
+    margin-top: .5625rem;
+    border-radius: .625rem;
+    position: relative;
+    z-index: -1;
+}
+.Cart-section  .Cart-wrapper .cart-form .progress-bar-section .progress-bar .progress{
+    width: 40%;
+    height: 100%;
+    background-color:red;
+    display: inline-block;
+    border-radius: .625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/*! progres bar end  */
+/*? Table Start  */
+.cart-form .cart-table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1.875rem;
+}
+.table-body-wrapper .table-body-item .table-image img{
+    width: 3.75rem;
+}
+.cart-form .cart-table .table-head-wrapper th{
+    font-size: .875rem;
+    font-weight: 600;
+    ;
+    text-align: start;
+    
+}
+
+.cart-form .cart-table > :not(caption)  th,td{
+    padding: .5rem 0;
+}
+
+.cart-form .cart-table .table-body-wrapper{
+    border-top: 1px solid #dee0ea;
+}
+.cart-form .cart-table .table-body-wrapper .table-body-item{
+    border-bottom: 1px solid #dee0ea;
+    
+}
+.cart-table .product-quantity,
+.cart-table .subtotal{
+    text-align: center;
+}
+.cart-form .cart-table .table-body-wrapper .table-body-item .table-image{
+    position: relative;
+}
+.cart-form .cart-table .table-body-wrapper .table-body-item .table-image .delete-cart{
+    position: absolute;
+    left: -7px;
+    top: 0;
+    color:red;
+    cursor: pointer;
+}
+/*? Table End  */
+/*! Actions Start  */
+.actions-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .625rem;
+    margin-top: .9375rem;
+}
+.actions-wrapper .coupon{
+    display: flex;
+    align-items: center;
+    column-gap: .625rem;
+}
+.actions-wrapper .coupon button{
+    background-color:black;
+    color: white;
+    
+}
+.actions-wrapper .coupon input{
+    height: 100%;
+}
+.actions-wrapper .update-cart button{
+    background-color:#EE403D;
+    color: white;
+    border-color: white;
+  
+}
+/*! Actions End  */
+
+/*? Cart form end  */
+
+/*? cart-collaterals start  */
+
+.Cart-wrapper .cart-collaterals{
+    border: 1px solid #dee0ea;
+    width: 18.75rem;
+    padding: 1.875rem;
+}
+
+.Cart-wrapper .cart-collaterals .Cart-Total-Amount{
+    font-size: 0.9rem;
+    font-weight: 600;
+   margin-bottom: 1.25rem;
+}
+.Cart-wrapper .cart-collaterals table{
+    border-collapse: collapse;
+    border-top: 1px solid #dee0ea;
+    width: 100%;
+}
+.Cart-wrapper .cart-collaterals table th,
+.Cart-wrapper .cart-collaterals table td
+{
+    font-size: .8125rem;
+    font-weight: 400;
+    padding: 1.25rem 0 .625rem 0;
+}
+
+.Cart-wrapper .cart-collaterals table tbody  tr:not(:last-child){
+    border-bottom: 1px solid #dee0ea;
+}
+.Cart-wrapper .cart-collaterals table tbody th{
+    text-align: start;
+}
+.Cart-wrapper .cart-collaterals table tbody td{
+    text-align: end;
+}
+.Cart-wrapper .cart-collaterals table tbody td ul li {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: .25rem;
+}
+.Cart-wrapper .cart-collaterals table tbody td ul li a{
+    color:#EE403D;
+    margin-top: .625rem;
+    font-size: .7175rem;
+    font-weight: 500;
+}
+.Cart-wrapper .cart-collaterals table tbody td strong span{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.Cart-wrapper .cart-collaterals  .checkout button{
+    margin-top: 2.5rem;
+    background-color:#EE403D;
+    color: white;
+    width: 100%;
+}
+
+/*? cart-collaterals end  */
+
+
+/*! Responsive Start */
+@media (max-width:992px){
+    .Cart-wrapper{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .Cart-wrapper .cart-collaterals{
+        width: 100%;
+    }
+}
+@media (max-width:844px){
+    .Cart-wrapper .cart-form .card-table-wrapper {
+        overflow-x: scroll;
+    }
+}
+/*! Responsive End  */

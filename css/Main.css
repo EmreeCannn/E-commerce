@@ -1,0 +1,37 @@
+/*! Global Css  */
+@import url(base.css);
+
+
+/*! layout */
+@import url(layout/Header.css);
+@import url(layout/Footer.css);
+
+/*! Components  */
+@import url(components/Search-Container.css);
+@import url(components/slider.css);
+@import url(components/category-item.css);
+@import url(components/product-item.css);
+@import url(components/Campaign.css);
+@import url(components/blog-item.css);
+@import url(components/Brand-item.css);
+@import url(components/Campaign-single.css);
+@import url(components/policy-item.css);
+@import url(components/product-details/breadcrumb.css);
+@import url(components/product-details/product-gallery.css);
+@import url(components/product-details/product-info.css);
+@import url(components/product-details/tab-list.css);
+@import url(components/reviews.css);
+@import url(components/wp-button.css);
+@import url(components/modal-dialog.css);
+
+/*!  pages */
+@import url(pages/Home.css);
+@import url(pages/Contact.css);
+@import url(pages/Account.css);
+@import url(pages/Cart.css);
+@import url(pages/product-details.css);
+@import url(pages/single-blog.css);
+
+
+
+

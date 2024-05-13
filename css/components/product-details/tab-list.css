@@ -1,0 +1,45 @@
+.tab-list-wrapper{
+    margin-bottom: 1.875rem;
+    
+}
+.tab-list-wrapper .product-detail-tab-list{
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #dee1ea;
+}
+.tab-list-wrapper .product-detail-tab-list .tab-list-item  .tab-button.active{
+    font-weight: bold;
+}
+.tab-list-wrapper .tab-panel-wrapper{
+    margin-top: 1.25rem ;
+}
+.tab-list-wrapper .tab-panel-wrapper .tab-panel-description p{
+    font-size: .8125rem;
+    line-height: 1.5;
+}
+.tab-list-wrapper .tab-panel-wrapper .tab-panel-information table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.tab-list-wrapper .tab-panel-wrapper .tab-panel-information table th,
+.tab-list-wrapper .tab-panel-wrapper .tab-panel-information table td{
+    border: 1px solid #dee1ea;
+    padding: .625rem .375rem;
+    text-align: start;
+    font-size: .875rem;
+
+}
+.tab-list-wrapper .tab-panel-wrapper .tab-panel-information h3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .9375rem 0;
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+

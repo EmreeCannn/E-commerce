@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "stars":["fill","fill","half"],
+        "name": "Analogue Resin Strap",
+        "price": {
+            "oldPrice": 125.00,
+            "newPrice": 108.00
+        },
+        "discount": 22,
+        "img": {
+            "singleImage": "img/products/product1/1.png",
+            "thumbs": [
+                "img/products/product1/1.png",
+                "img/products/product1/2.png",
+                "img/products/product1/3.png"
+            ]
+        },
+        "details":"Lumberjack shirt 100% cotton you will attract people's attention when you wear it outsidewe follow the design for our customer and implement wisely in our products"
+        
+    },
+    {
+        "id": 2,
+        "name": "Ridley High Waist",
+        "price": {
+            "oldPrice": 208.00,
+            "newPrice": 105.00
+        },
+        "discount": 33,
+        "img": {
+            "singleImage": "img/products/product2/1.png",
+            "thumbs": [
+                "img/products/product2/1.png",
+                "img/products/product2/2.png",
+                "img/products/product2/3.png"
+            ]
+        },
+        "details":"Ridley High Waist shirt 100% cotton you will attract people's attention when you wear it outsidewe follow the design for our customer and implement wisely in our products"
+        
+    },
+    {
+        "id": 3,
+        "name": "Blush Beanie",
+        "price": {
+            "oldPrice": 115.00,
+            "newPrice": 38.00
+        },
+        "discount": 90,
+        "img": {
+            "singleImage": "img/products/product3/1.png",
+            "thumbs": [
+                "img/products/product3/1.png",
+                "img/products/product3/2.png",
+                "img/products/product3/3.png"
+            ]
+        },
+        "details":"Blush Beanie 100% cotton you will attract people's attention when you wear it outsidewe follow the design for our customer and implement wisely in our products"
+        
+    },
+    {
+        "id": 4,
+        "name": "Mercury Tee",
+        "price": {
+            "oldPrice": 75.00,
+            "newPrice": 48.00
+        },
+        "discount": 40,
+        "img": {
+            "singleImage": "img/products/product4/1.png",
+            "thumbs": [
+                "img/products/product4/1.png",
+                "img/products/product4/2.png",
+                "img/products/product4/3.png"
+            ]
+        },
+        "details":"Mercury Tee 100% cotton you will attract people's attention when you wear it outsidewe follow the design for our customer and implement wisely in our products"
+        
+    },
+    {
+        "id": 5,
+        "name": "La Bohème Rose Gold",
+        "price": {
+            "oldPrice": 65.00,
+            "newPrice": 48.00
+        },
+        "discount": 40,
+        "img": {
+            "singleImage": "img/products/product5/1.png",
+            "thumbs": [
+                "img/products/product5/1.png",
+                "img/products/product5/2.png",
+                "img/products/product5/3.png"
+            ]
+        },
+        "details":"La Bohéma Rose Gold 100% cotton you will attract people's attention when you wear it outsidewe follow the design for our customer and implement wisely in our products"
+        
+    }
+]

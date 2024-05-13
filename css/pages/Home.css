@@ -1,0 +1,43 @@
+.section-titles{
+    text-align: center;
+    margin-bottom: 1.875rem;
+}
+.section-titles h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .3125rem;
+}
+
+/*! Categories Start */
+.Categories{
+    margin: 2.5rem 0;
+}
+.Categories .Category-list{
+    display: flex;
+    gap: 14px;
+}
+
+/*! Categories End */
+
+/*! Products Start */
+
+.products .product-list{
+    display: flex;
+    
+}
+
+/*! Products End  */
+
+
+/*! Campaign Start  */
+.Campaign .Campaign-wrapper{
+    display: flex;
+    gap: 1.875rem;
+    margin: 1.875rem 0;
+    flex-wrap: wrap;
+}
+/*! Campaign End  */
+
+/*? Blog Start */
+
+/*? Blog End  */
